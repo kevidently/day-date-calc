@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Day Date Calculator</title>
+	<meta name="Description" content="A simple PHP utility for calculating dates based number of days, or vice-versa.">
+	<meta name="keywords" content="calculator, dates, days, date, day">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/ddcalc.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<form id="calc1">
+			<h2>Days Between Dates</h2>
+			<p>Use this calculator to determine the number of days between two dates.</p>
+		
+			<div class="form-group row">
+				<label for="datePicker1" class="col-sm-3 col-form-label">Date One:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="datePicker1" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="datePicker2" class="col-sm-3 col-form-label">Date Two:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="datePicker2" />
+				</div>
+			</div>	
+			<div class="form-group row">
+				<div class="col-sm-3">
+					<button type="submit" class="btn btn-primary">Calculate Days</button>	
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="result_box1" />
+				</div>
+			</div>	
+		</form>
+
+		<form id="calc2">
+			<h2>Date In Future/Past</h2>
+			<p>Use this calculator to determine a date in the future or past based on a certain number of days.</p>
+			
+			<div class="form-group row">
+				<label for="datePicker3" class="col-sm-3 col-form-label">Start Date:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="datePicker3" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="timeDir" class="col-sm-3 col-form-label">Time Direction:</label>
+				<div class="col-sm-3">
+					<select class="form-control" id="timeDir">
+						<option value="Past">Past</option>
+						<option value="Future">Future</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="dayNum" class="col-sm-3 col-form-label">Number of Days:</label>
+				<div class="col-sm-3">
+					<input type="number" class="form-control" id="dayNum" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-3">
+					<button type="submit" class="btn btn-primary">Calculate Date</button>	
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="result_box2" />
+				</div>
+			</div>	
+			
+		</form>		
+	</div>
+</body>
+</html>
